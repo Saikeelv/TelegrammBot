@@ -185,12 +185,15 @@ def func(message):
         markup.add(btn1)
         bot.send_message(message.chat.id, text="Это стул в доме Патрика", reply_markup=markup)
         bot.send_photo(message.chat.id, photo='https://yandex.ru/images/search?text=дом%20патрика%20мем&from=tabbar&pos=11&img_url=http%3A%2F%2Fimg.buzzfeed.com%2Fbuzzfeed-static%2Fstatic%2F2020-01%2F2%2F17%2Fasset%2F6b104667e1d1%2Fsub-buzz-405-1577985785-9.png&rpt=simage&lr=120836')
-№№№
+###
     if (message.text == "Лайк"):
+        bot.send_message(message.chat.id, text="Еще увидимся")
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        back = types.KeyboardButton("/start")
-        markup.add(back)
-        bot.send_message(message.chat.id, text="Еще увидимся", reply_markup=markup)
+        btn_boy = types.KeyboardButton("Пай - мальчик")
+        btn_2d = types.KeyboardButton("2D тяночка")
+        btn_hait = types.KeyboardButton("Хейтер")
+        markup.add(btn_boy, btn_2d, btn_hait) 
+        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup)
 
     if (message.text == "Нетт"):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -204,12 +207,15 @@ def func(message):
         markup.add(btn1)
         bot.send_message(message.chat.id, text="Погнали в гости к Патрику", reply_markup=markup)
         bot.send_photo(message.chat.id, photo='https://yandex.ru/images/search?from=tabbar&text=патрик%20мем&pos=29&img_url=http%3A%2F%2Fcartoonbucket.com%2Fwp-content%2Fuploads%2F2015%2F12%2FPatrick-Star-Smiling-eq245.gif&rpt=simage&lr=120836')
-№№№
+###
     if (message.text == "Лайкос"):
+        bot.send_message(message.chat.id, text="До встречи!")
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        back = types.KeyboardButton("/start")
-        markup.add(back)
-        bot.send_message(message.chat.id, text="До встречи!", reply_markup=markup)
+        btn_boy = types.KeyboardButton("Пай - мальчик")
+        btn_2d = types.KeyboardButton("2D тяночка")
+        btn_hait = types.KeyboardButton("Хейтер")
+        markup.add(btn_boy, btn_2d, btn_hait) 
+        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup)
 
     if (message.text == "Ниже плинтуса"):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -223,12 +229,15 @@ def func(message):
         markup.add(btn1)
         bot.send_message(message.chat.id, text="Добро пожаловать в Бикини Боттом, сегодня скидки на крабсбургеры", reply_markup=markup)
         bot.send_photo(message.chat.id, photo='https://yandex.ru/images/search?text=бикини%20боттом&from=tabbar&p=2&pos=68&rpt=simage&img_url=http%3A%2F%2Fwhitegames.net%2Fuploads%2Fposts%2F2020-08%2F15965308797_440-h620.jpg&lr=120836')
-№№№
+###
     if (message.text == "Зачет"):
+        bot.send_message(message.chat.id, text="До скорой!")
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        back = types.KeyboardButton("/start")
-        markup.add(back)
-        bot.send_message(message.chat.id, text="До скорой!", reply_markup=markup)
+        btn_boy = types.KeyboardButton("Пай - мальчик")
+        btn_2d = types.KeyboardButton("2D тяночка")
+        btn_hait = types.KeyboardButton("Хейтер")
+        markup.add(btn_boy, btn_2d, btn_hait) 
+        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup)
 
     if (message.text == "В Бикини Боттом"):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -236,12 +245,15 @@ def func(message):
         markup.add(btn1)
         bot.send_message(message.chat.id, text="Добро пожаловать! В Красти Краб сегодня скидочки!", reply_markup=markup)
         bot.send_photo(message.chat.id, photo='https://yandex.ru/images/search?text=красти%20крабс%20мем&from=tabbar&pos=17&img_url=http%3A%2F%2Fi.ytimg.com%2Fvi%2FQyKTtXgWfGA%2Fmaxresdefault.jpg&rpt=simage&lr=120836')
-№№№
+###
     if (message.text == "Класс"):
+        bot.send_message(message.chat.id, text="Пошел за крабсбургером")
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        back = types.KeyboardButton("/start")
-        markup.add(back)
-        bot.send_message(message.chat.id, text="Пошел за крабсбургером", reply_markup=markup)
+        btn_boy = types.KeyboardButton("Пай - мальчик")
+        btn_2d = types.KeyboardButton("2D тяночка")
+        btn_hait = types.KeyboardButton("Хейтер")
+        markup.add(btn_boy, btn_2d, btn_hait) 
+        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup)
 
     if (message.text == "Неудачи по жизни"):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -256,25 +268,31 @@ def func(message):
         btn1 = types.KeyboardButton("В окне")
         markup.add(btn1)
         bot.send_message(message.chat.id, text="Выход есть и он?", reply_markup=markup)
-№№№
+###
     if (message.text == "В окне"):
-        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        back = types.KeyboardButton("/start")
-        markup.add(back)
-        bot.send_message(message.chat.id, text="Номер психологической помощи", reply_markup=markup)
+        bot.send_message(message.chat.id, text="Номер психологической помощи: 84232227665")
         bot.send_photo(message.chat.id, photo='https://yandex.ru/images/search?from=tabbar&text=номер%20психологической%20помощи%20мем&pos=20&img_url=http%3A%2F%2Frisovach.ru%2Fupload%2F2014%2F01%2Fmem%2Ftoni-stark_40740970_big_.jpeg&rpt=simage&lr=120836')
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn_boy = types.KeyboardButton("Пай - мальчик")
+        btn_2d = types.KeyboardButton("2D тяночка")
+        btn_hait = types.KeyboardButton("Хейтер")
+        markup.add(btn_boy, btn_2d, btn_hait) 
+        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup)
 
     if (message.text == "У меня нет друзей"):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = types.KeyboardButton("Не хочу")
         markup.add(btn1)
         bot.send_message(message.chat.id, text="Давай дружить!", reply_markup=markup)
-№№№
+###
     if (message.text == "Не хочу"):
+        bot.send_message(message.chat.id, text="Ищи других слушателей")
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        back = types.KeyboardButton("/start")
-        markup.add(back)
-        bot.send_message(message.chat.id, text="Ищи других слушателей", reply_markup=markup)
+        btn_boy = types.KeyboardButton("Пай - мальчик")
+        btn_2d = types.KeyboardButton("2D тяночка")
+        btn_hait = types.KeyboardButton("Хейтер")
+        markup.add(btn_boy, btn_2d, btn_hait) 
+        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup)
 
     if (message.text == "Все стабильно"):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -283,25 +301,34 @@ def func(message):
         btn3 = types.KeyboardButton("Родителей")
         markup.add(btn1, btn2, btn3)
         bot.send_message(message.chat.id, text="Кого ты обманываешь?", reply_markup=markup)
-№№№
+###
     if (message.text == "Себя"):
-        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        back = types.KeyboardButton("/start")
-        markup.add(back)
-        bot.send_message(message.chat.id, text="Номер психологической помощи", reply_markup=markup)
+        bot.send_message(message.chat.id, text="Номер психологической помощи")
         bot.send_photo(message.chat.id, photo= 'https://yandex.ru/images/search?from=tabbar&text=номер%20психологической%20помощи%20мем&pos=20&img_url=http%3A%2F%2Frisovach.ru%2Fupload%2F2014%2F01%2Fmem%2Ftoni-stark_40740970_big_.jpeg&rpt=simage&lr=120836');
-№№№
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn_boy = types.KeyboardButton("Пай - мальчик")
+        btn_2d = types.KeyboardButton("2D тяночка")
+        btn_hait = types.KeyboardButton("Хейтер")
+        markup.add(btn_boy, btn_2d, btn_hait) 
+        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup)
+###
     if (message.text == "Меня"):
+        bot.send_message(message.chat.id, text="Все х**yня, давай по новой!")
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        back = types.KeyboardButton("/start")
-        markup.add(back)
-        bot.send_message(message.chat.id, text="Все х**yня, давай по новой!", reply_markup=markup)
-№№№
+        btn_boy = types.KeyboardButton("Пай - мальчик")
+        btn_2d = types.KeyboardButton("2D тяночка")
+        btn_hait = types.KeyboardButton("Хейтер")
+        markup.add(btn_boy, btn_2d, btn_hait) 
+        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup)
+###
     if (message.text == "Родителей"):
+        bot.send_message(message.chat.id, text="Тебе нужно больше стараться!")
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        back = types.KeyboardButton("/start")
-        markup.add(back)
-        bot.send_message(message.chat.id, text="Тебе нужно больше стараться!", reply_markup=markup)
+        btn_boy = types.KeyboardButton("Пай - мальчик")
+        btn_2d = types.KeyboardButton("2D тяночка")
+        btn_hait = types.KeyboardButton("Хейтер")
+        markup.add(btn_boy, btn_2d, btn_hait) 
+        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup)
             
     
         
