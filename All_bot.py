@@ -303,7 +303,7 @@ def func(message):
         bot.send_message(message.chat.id, text="Кого ты обманываешь?", reply_markup=markup)
 ###
     if (message.text == "Себя"):
-        bot.send_message(message.chat.id, text="Номер психологической помощи")
+        bot.send_message(message.chat.id, text="Номер психологической помощи: 84232227665")
         bot.send_photo(message.chat.id, photo= 'https://yandex.ru/images/search?from=tabbar&text=номер%20психологической%20помощи%20мем&pos=20&img_url=http%3A%2F%2Frisovach.ru%2Fupload%2F2014%2F01%2Fmem%2Ftoni-stark_40740970_big_.jpeg&rpt=simage&lr=120836');
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn_boy = types.KeyboardButton("Пай - мальчик")
@@ -329,6 +329,120 @@ def func(message):
         btn_hait = types.KeyboardButton("Хейтер")
         markup.add(btn_boy, btn_2d, btn_hait) 
         bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup)
+        
+############################################################################################################
+#good boy
+    if (message.text == "Пай - мальчик"):
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn1 = types.KeyboardButton("👋 Поздороваться")
+        btn2 = types.KeyboardButton("❓ Задать вопрос")
+        markup.add(btn1, btn2)
+        bot.send_message(message.chat.id, text="Привет, {0.first_name}! Будем знакомы 😇".format(message.from_user), reply_markup=markup)
+    if(message.text == "👋 Поздороваться"):
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn1 = types.KeyboardButton("Хорошо")
+        btn2 = types.KeyboardButton("Не очень :с")
+        markup.add(btn1, btn2)
+        bot.send_message(message.chat.id, text="Как дела? У тебя всё хорошо?", reply_markup=markup)
+        
+    if(message.text == "Хорошо"):
+        bot.send_message(message.chat.id, "Ну раз так, скинь фото в чулочках сейчас же!")
+        bot.send_photo(message.chat.id, 'https://sun9-79.userapi.com/impg/qB1yH6VW1x0dYnmdO4ow2t51z7OyvqXxvCdDiQ/cEmvBJsfFCo.jpg?size=700x525&quality=95&sign=88035c7971b09b6b3da8f15b6f5dfbc1&type=album');
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn_boy = types.KeyboardButton("Пай - мальчик")
+        btn_2d = types.KeyboardButton("2D тяночка")
+        btn_hait = types.KeyboardButton("Хейтер")
+        markup.add(btn_boy, btn_2d, btn_hait) 
+        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup)
+        
+    if(message.text == "Не очень :с"):
+       markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+       btn1 = types.KeyboardButton("Я устал, я ухожу")
+       btn2 = types.KeyboardButton("Дедлайны горят")
+       markup.add(btn1, btn2)
+       bot.send_message(message.chat.id, text="Что случилось?", reply_markup=markup)
+        
+        
+    
+    if(message.text == "Как ты?"):
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn1 = types.KeyboardButton("Дадада!!!!")
+        btn2 = types.KeyboardButton("Даааа 😻")
+        markup.add(btn1, btn2)
+        bot.send_message(message.chat.id, "Хорошо 😽\nУ меня много котят новых, показать?)", reply_markup=markup)
+        
+    if(message.text == "Поговорим?"):
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn1 = types.KeyboardButton("Об учёбе")
+        btn2 = types.KeyboardButton("О котиках")
+        markup.add(btn1, btn2)
+        bot.send_message(message.chat.id, text="Давай, о чём хочешь?", reply_markup=markup)
+        
+    if(message.text == "❓ Задать вопрос"):
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn1 = types.KeyboardButton("Как ты?")
+        btn2 = types.KeyboardButton("Поговорим?")
+        markup.add(btn1, btn2)
+        bot.send_message(message.chat.id, text="Задай мне вопрос", reply_markup=markup)       
+    if(message.text == "Дадада!!!!" or message.text == "Даааа 😻"):
+        bot.send_photo(message.chat.id, 'https://sun9-37.userapi.com/impg/IOICtu98GliKlnx81VyxfF7VGbub2muHuHOFSw/p9zDILmr2Rg.jpg?size=591x702&quality=95&sign=f303b5c6a301b25802b0a067c422a8e1&type=album')
+        bot.send_message(message.chat.id, text="Держи ещё котиков")
+        bot.send_photo(message.chat.id, 'https://sun9-3.userapi.com/impg/JhipnW_ZTt7w6oa7PBtfD2ZVRpWm5fKW_n_OMg/pC1XezxSe8w.jpg?size=600x470&quality=95&sign=7c21aee916fcb645a2ef6ad6b1d9a018&type=album')
+        bot.send_photo(message.chat.id, 'https://sun9-39.userapi.com/impg/8CaFqtoL-_GvTQNmYeAjewX7vyA8i2grm7juLg/eN0Rag7S6E8.jpg?size=564x418&quality=95&sign=2f1c77b3522d83a470e5731f0962fd47&type=album')
+        markup = types.InlineKeyboardMarkup()
+        button1 = types.InlineKeyboardButton("Ня", url='https://vk.com/video-152083915_456275664')
+        markup.add(button1)
+        bot.send_message(message.chat.id, "На последок", reply_markup=markup)
+        
+        markup1 = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn_boy = types.KeyboardButton("Пай - мальчик")
+        btn_2d = types.KeyboardButton("2D тяночка")
+        btn_hait = types.KeyboardButton("Хейтер")
+        markup1.add(btn_boy, btn_2d, btn_hait) 
+        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup1)
+        
+        
+    if(message.text == "Я устал, я ухожу"):
+        bot.send_message(message.chat.id, text="Нееет, ты куда???\nГрустненько 😿")
+        bot.send_photo(message.chat.id, 'https://sun5-4.userapi.com/impg/Rhh0Ssh74x35wWYa0RGk1VISArH_HOSWtVZVEQ/UhkKhdXivD8.jpg?size=735x730&quality=96&sign=a43420271797f5c02bfe8fe5ad85be56&type=album')
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn_boy = types.KeyboardButton("Пай - мальчик")
+        btn_2d = types.KeyboardButton("2D тяночка")
+        btn_hait = types.KeyboardButton("Хейтер")
+        markup.add(btn_boy, btn_2d, btn_hait) 
+        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup)
+    
+    if(message.text == "Дедлайны горят"):
+        bot.send_message(message.chat.id, text="Я уверен ты обязательно справишься! Держи котика от меня")
+        bot.send_photo(message.chat.id, 'https://sun9-47.userapi.com/impg/1xMbuLvKiGJsisfvbSQHs9LwT3KR2fI7yE2wvQ/scyvGotIYco.jpg?size=790x753&quality=95&sign=31080d791029af86b6607476a2ae542d&type=album')
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn_boy = types.KeyboardButton("Пай - мальчик")
+        btn_2d = types.KeyboardButton("2D тяночка")
+        btn_hait = types.KeyboardButton("Хейтер")
+        markup.add(btn_boy, btn_2d, btn_hait) 
+        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup)
+        
+    if(message.text == "Об учёбе"):
+        bot.send_message(message.chat.id, text="О нееет, только не о ней")
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn_boy = types.KeyboardButton("Пай - мальчик")
+        btn_2d = types.KeyboardButton("2D тяночка")
+        btn_hait = types.KeyboardButton("Хейтер")
+        markup.add(btn_boy, btn_2d, btn_hait) 
+        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup)
+        
+        
+    if(message.text == "О котиках"):
+        bot.send_message(message.chat.id, text="Давай я тебе лучше котика скину")
+        bot.send_photo(message.chat.id, "https://sun9-84.userapi.com/impg/6hKXEHL3EuqMFDXbqupUxrQ8UPGk8uodpRQabw/ZgSEJyqDTK8.jpg?size=960x956&quality=95&sign=e82183a31ef2a7a2e65984d754b24092&type=album")
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn_boy = types.KeyboardButton("Пай - мальчик")
+        btn_2d = types.KeyboardButton("2D тяночка")
+        btn_hait = types.KeyboardButton("Хейтер")
+        markup.add(btn_boy, btn_2d, btn_hait) 
+        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup)
+    
+    
             
     
         
