@@ -114,7 +114,7 @@ def func(message):
         btn_Yes = types.KeyboardButton("Конечно смотрел")
         btn_No = types.KeyboardButton("Неа")
         markup.add(btn_Yes, btn_No)
-        bot.send_message(message.chat.id, text="Ах тыж маленький любитель японской анимации?\nСмотрел евангелион?",
+        bot.send_message(message.chat.id, text="Ах тыж маленький любитель японской анимации)\nСмотрел евангелион?",
                          reply_markup=markup)
 
     if (message.text == "Конечно смотрел"):
@@ -147,7 +147,7 @@ def func(message):
         markup.add(btn_boy, btn_2d, btn_hait)
         bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup)
     if (message.text == "Не"):
-        bot.send_message(message.chat.id, text="ах, не буду тебе больше мемы скидывыать...")
+        bot.send_message(message.chat.id, text="ах, не буду тебе больше мемы скидывать...")
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn_boy = types.KeyboardButton("Пай - мальчик")
         btn_2d = types.KeyboardButton("2D тяночка")
