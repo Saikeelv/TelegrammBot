@@ -116,7 +116,7 @@ def func(message):
         markup1 = types.InlineKeyboardMarkup()
         btn_url = types.InlineKeyboardButton("Ссылочка на песню", url='https://www.youtube.com/watch?v=YmQYcPci_U4')
         markup1.add(btn_url)
-        bot.send_message(message.chat.id, text="Вот очень интересная композиция с классным видиорядом:",reply_markup=markup1)
+        bot.send_message(message.chat.id, text="Вот очень интересная композиция с классным видеорядом:",reply_markup=markup1)
         markup2 = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn_boy = types.KeyboardButton("Пай - мальчик")
         btn_2d = types.KeyboardButton("2D тяночка")
@@ -466,7 +466,7 @@ def func(message):
 
     elif (message.text == "❓ Задать вопрос"):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        btn1 = types.KeyboardButton("Как ты?")
+        btn1 = types.KeyboardButton("Как ты?") 
         btn2 = types.KeyboardButton("Поговорим?")
         markup.add(btn1, btn2)
         bot.send_message(message.chat.id, text="Задай мне вопрос", reply_markup=markup)
