@@ -39,7 +39,7 @@ def func(message):
         btn_dramma = types.KeyboardButton("драма")
         btn_romantic = types.KeyboardButton("романтика")
         markup.add(btn_dramma, btn_fantastic, btn_romantic, btn_triller)
-        bot.send_message(message.chat.id, text="Круто, какие жанры предпочитиешь?", reply_markup=markup)
+        bot.send_message(message.chat.id, text="Круто, какой жанр предпочитиешь?", reply_markup=markup)
 
     elif (
             message.text == "триллер" or message.text == "драма" or message.text == "фантастика" or message.text == "романтика"):
@@ -55,14 +55,29 @@ def func(message):
         markup.add(btn_url)
         bot.send_message(message.chat.id, "Обожаю этот фильм", reply_markup=markup)
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn_btn = types.KeyboardButton("А мне понравилось)")
+        markup.add(btn_btn)
+        bot.send_message(message.chat.id, text="Советую к просмотру)", reply_markup=markup)
+    
+    elif (message.text == "А мне понравилось)"): 
+        bot.send_message(message.chat.id, text="Эх, был бы ты 2D)))))")
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        bot.send_photo(message.chat.id,
+                       'http://pm1.narvii.com/7594/a95fe062f340ffba0d605e0393673cadce227f4ar1-1000-1000v2_uhq.jpg');
+        markup1 = types.InlineKeyboardMarkup()
+        btn_url = types.InlineKeyboardButton("На", url='https://www.youtube.com/watch?v=GXJWoCV0gtc&t=0s')
+        markup1.add(btn_url)
+        bot.send_message(message.chat.id, "Держи ещё фильмец на ночь, маленький извращенец", reply_markup=markup1)
+        markup2 = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn_boy = types.KeyboardButton("Пай - мальчик")
         btn_2d = types.KeyboardButton("2D тяночка")
         btn_hait = types.KeyboardButton("Хейтер")
-        markup.add(btn_boy, btn_2d, btn_hait)
-        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup)
+        markup2.add(btn_boy, btn_2d, btn_hait)
+        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup2)
+
 
     elif (message.text == "Не очень"):
-        bot.send_message(message.chat.id, text="Ну и ладно, ищи себе другую 2д девушку....")
+        bot.send_message(message.chat.id, text="Ну и ладно, ищи себе другую 2D девушку....")
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn_boy = types.KeyboardButton("Пай - мальчик")
         btn_2d = types.KeyboardButton("2D тяночка")
@@ -78,7 +93,7 @@ def func(message):
         btn_rep = types.KeyboardButton("рэп")
         btn_hiphop = types.KeyboardButton("хип-хоп")
         markup.add(btn_kpop, btn_rock, btn_rep, btn_hiphop)
-        bot.send_message(message.chat.id, text="люблю говорить о музыке)\nкакие жанры тебе нравятся?",
+        bot.send_message(message.chat.id, text="люблю говорить о музыке)\nкакой жанр тебе нравятся?",
                          reply_markup=markup)
 
     elif (message.text == "k-pop" or message.text == "рок" or message.text == "рэп" or message.text == "хип-хоп"):
@@ -169,11 +184,24 @@ def func(message):
         markup.add(btn_url)
         bot.send_message(message.chat.id, text="Очень советую посмотреть", reply_markup=markup)
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn_btn = types.KeyboardButton("Посоветуешь ещё что-нибудь?")
+        markup.add(btn_btn)
+        bot.send_message(message.chat.id, text=")", reply_markup=markup)
+        
+    elif (message.text == "Посоветуешь ещё что-нибудь?"):
+        bot.send_photo(message.chat.id,
+                       'http://risovach.ru/upload/2018/07/mem/dzheyn-kobb_182418888_orig_.jpg');
+        markup = types.InlineKeyboardMarkup()
+        btn_url = types.InlineKeyboardButton("Наслаждайся, юная анимешная душа))", url='https://animego.org/anime/yuri-na-ldu-165')
+        markup.add(btn_url)
+        bot.send_message(message.chat.id, text="Уверена, тебе понравится,\nаниме про настоящую мужскую дружбу)))))", reply_markup=markup)
+        markup1 = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn_boy = types.KeyboardButton("Пай - мальчик")
         btn_2d = types.KeyboardButton("2D тяночка")
         btn_hait = types.KeyboardButton("Хейтер")
-        markup.add(btn_boy, btn_2d, btn_hait)
-        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup)
+        markup1.add(btn_boy, btn_2d, btn_hait)
+        bot.send_message(message.chat.id, text="Выбери нового персонажа для беседы", reply_markup=markup1)
+   
     elif (message.text == "Не"):
         bot.send_message(message.chat.id, text="ах, не буду тебе больше мемы скидывать...")
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
