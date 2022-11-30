@@ -425,12 +425,12 @@ def func(message):
         bot.send_message(message.chat.id, text="Как дела? У тебя всё хорошо?", reply_markup=markup)
 
     elif (message.text == "Хорошо"):
-        bot.send_photo(message.chat.id,
-                       'https://sun9-79.userapi.com/impg/qB1yH6VW1x0dYnmdO4ow2t51z7OyvqXxvCdDiQ/cEmvBJsfFCo.jpg?size=700x525&quality=95&sign=88035c7971b09b6b3da8f15b6f5dfbc1&type=album');
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn_No = types.KeyboardButton("Не скину тебе ничего!")
         markup.add(btn_No)
         bot.send_message(message.chat.id, text="Ну раз так, скинь фото в чулочках сейчас же!", reply_markup=markup)
+        bot.send_photo(message.chat.id,
+                       'https://sun9-79.userapi.com/impg/qB1yH6VW1x0dYnmdO4ow2t51z7OyvqXxvCdDiQ/cEmvBJsfFCo.jpg?size=700x525&quality=95&sign=88035c7971b09b6b3da8f15b6f5dfbc1&type=album');
         
     elif (message.text == "Не скину тебе ничего!"):
         bot.send_photo(message.chat.id,
