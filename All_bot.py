@@ -83,7 +83,7 @@ def func(message):
 
     elif (message.text == "k-pop" or message.text == "рок" or message.text == "рэп" or message.text == "хип-хоп"):
         markup = types.InlineKeyboardMarkup()
-        btn_url = types.InlineKeyboardButton("Вот например", url='https://www.youtube.com/watch?v=_CYZjMB5rbo')
+        btn_url = types.InlineKeyboardButton("Вот например", url='https://www.youtube.com/watch?v=8N7mtvyYnhg')
         markup.add(btn_url)
         bot.send_message(message.chat.id, text="Круто, но мне нравится немного другой жанр музыки.)",reply_markup=markup)
   
